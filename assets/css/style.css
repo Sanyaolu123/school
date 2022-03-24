@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.login-body{
+    background-image: url("../images/auth/desola-lanre-ologun-zYgV-NGZtlA.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    background-position: center center;
+    z-index:-2;
+}
+.login-body:before{
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:rgba(0, 0, 0, .5);
+    z-index:-1;
+}
+.wrapper{
+    width:300px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    background:transparent;
+    box-shadow: 0 0 .2em .2em rgb(255, 255, 255, .05);
+    border-radius:1em;
+    color:white;
+}
+.wrapper .header{
+    text-align:center;
+    margin:.5em 0;
+}
+.wrapper form{
+    margin:.5em 0;
+    padding:1em;
+}
+.wrapper form input{
+    width:calc(100% - 1.2em);
+    outline:none;
+    padding:.5em;
+    margin:.5em 0;
+    border-radius:.2em;
+    background:transparent;
+    border:1px solid rgb(255, 159, 0);
+    color:white;
+}
+.wrapper form input::placeholder{
+    color:white;
+}
+.wrapper form p{
+    margin:.5em 0;
+}
+.wrapper form p a{
+    text-decoration: none;
+    color:white;
+
+}
+.wrapper .header{
+    font-weight:bolder;
+    font-size:1.2em;
+}
+.wrapper form p a:hover{
+    text-decoration: underline;
+}
+.wrapper form button{
+    width:100%;
+    background:rgb(255, 159, 0);
+    border:none;
+    outline:none;
+    padding:.6em;
+    border-radius:.5em;
+    color:white;
+    font-weight:bolder;
+    cursor:pointer;
+    margin:.5em 0;
+}
+.wrapper form button:hover{
+    background:rgba(255, 259, 0, .5);
+}
+.wrapper form input:focus{
+    box-shadow: rgba(255, 159, 0, 1);
+
+}
